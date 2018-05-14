@@ -1,0 +1,140 @@
+/* You can add global styles to this file, and also import other style files */
+html, body{
+	height: 100%;
+}
+
+body{
+	background: url('./assets/home-bg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.full-height{
+	height: 100%;
+}
+
+.full-width{
+	width: 100%;
+}
+
+.display-block{
+	display: block;
+}
+
+.hr{
+
+}
+
+.vetical-align{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-body{
+	height: 235px;
+}
+
+.enhance-margin{
+	margin-bottom: 15px;
+}
+
+.border-right{
+	border-right: 1px solid rgba(255, 255, 255, .5);
+}
+
+.modal-backdrop.fade{
+	opacity: 0.5;
+}
+
+.modal-open .modal{
+	opacity: 1;
+}
+
+.modal-dialog{
+	margin-top: 130px !important;
+}
+
+.modal-header{
+	border-bottom: 0;
+}
+
+.modal-footer{
+	border-top: 0;
+}
+
+.label-type{
+	font-size: 12px;
+	padding: 0 10px;
+	margin: 0 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+/* Type */
+.Ghost{
+	background-color: #485a62;
+}
+
+.Grass{
+	background-color: green;
+}
+
+.Fire{
+	background-color: orange;
+}
+
+.Poison{
+	background-color: purple;
+}
+
+.Flying{
+	background-color: #33f3ff;
+}
+
+.Normal{
+	background-color: #ffffff;
+	color: #292929;
+}
+
+.Electric{
+	background-color: yellow;
+}
+
+.Bug{
+	background-color: brown;
+}
+
+.Fairy{
+	background-color: pink;
+}
+
+.Ground{
+	background-color: grey;
+}
+
+.Water{
+	background-color: blue;
+}
+
+.Psychic{
+	background-color: #7433ff;
+}
+
+.Dragon{
+	background-color: #33ffb2;
+}
+
+.Rock{
+	background-color: #292929;
+}
+
+.Fighting{
+	background-color: #c2c2c2;
+}
+
+.Ice{
+	background-color: #0ea6ee;
+}
