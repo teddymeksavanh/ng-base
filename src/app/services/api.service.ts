@@ -18,7 +18,7 @@ export class ApiService {
         private headersService: HeadersService,
         private router: Router
     ) {
-        this.apiUrl = 'http://0.0.0.0:3000';
+        this.apiUrl = 'https://api.spacexdata.com/v2/launches?launch_year=2017&rocket_id=falcon9&core_reuse=true';
     }
 
     /*
@@ -79,7 +79,7 @@ export class ApiService {
     /*
     * Handle the Response
     */
-    private handleResponse(response: Response) {
+    public handleResponse(response: Response) {
         if (response.status !== 204) {
             // response.headers.get('X-Total-Count');
             return response.json();
@@ -90,7 +90,7 @@ export class ApiService {
     /*
     * Broadcast an error message
     */
-    private handleError(error: any): any {
+    public handleError(error: any): any {
         if (error.status === 401) {
             setTimeout(() => window.location.replace('/login'), 2000);
             return Observable.throw(error);

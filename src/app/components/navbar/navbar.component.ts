@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserFormModalComponent } from '../user/user-modal.component';
+import { UserFormModalComponent } from '@app/components/user/user-modal.component';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({

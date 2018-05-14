@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AppReadyEvent } from './app-ready.component';
+import { HeadersService } from '@app/services/headers.service';
 
 @Component({
   selector: 'app-root',
@@ -6,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  title = 'gow4lk-ng';
-
-  constructor(
-  ) { }
-
-  ngOnInit() {
+  constructor (
+    private appReadyEvent: AppReadyEvent,
+    private headersService: HeadersService
+  ) {
+    appReadyEvent.trigger();
   }
 
+  ngOnInit() {}
+
+  onActivate(e){
+    window.scrollTo(0, 0);
+  }
 }

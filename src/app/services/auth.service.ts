@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Headers, Http, Response } from '@angular/http';
 
 // Models
-import { User } from '../models/user';
+import { User } from '@models/user';
 
 // Services
 import { LocalStorageService } from 'angular-2-local-storage';

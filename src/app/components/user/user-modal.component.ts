@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter, ViewChild } from '@angular/core';
 
-import { User } from '../../models/user';
-import { AuthService } from '../../services/auth.service';
+import { User } from '@models/user';
+import { AuthService } from '@services/auth.service';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { UserFormComponent } from './user-form.component';
 

@@ -9,20 +9,22 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 
 // Components
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { AppComponent } from './app.component';
-import { UserFormComponent } from './components/user/user-form.component';
-import { UserFormModalComponent } from './components/user/user-modal.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { DashboardComponent } from '@app/components/dashboard/dashboard.component';
+import { AppComponent } from '@app/app.component';
+import { UserFormComponent } from '@app/components/user/user-form.component';
+import { UserFormModalComponent } from '@app/components/user/user-modal.component';
+import { NavbarComponent } from '@app/components/navbar/navbar.component';
+import { AppReadyEvent } from '@app/app-ready.component';
 
 // Services
-import { ApiService } from './services/api.service';
-import { HeadersService } from './services/headers.service';
-import { UserService } from './services/user.service';
-import { AuthService } from './services/auth.service';
+import { ApiService } from '@app/services/api.service';
+import { HeadersService } from '@app/services/headers.service';
+import { UserService } from '@app/services/user.service';
+import { AuthService } from '@app/services/auth.service';
+import { SpaceService } from '@app/services/space.service';
 
 // Pipes
-import { CamelCasePipe } from './pipes/camel-case.pipe';
+import { CamelCasePipe } from '@app/pipes/camel-case.pipe';
 
 @NgModule({
   declarations: [
@@ -66,7 +68,9 @@ import { CamelCasePipe } from './pipes/camel-case.pipe';
       ApiService,
       HeadersService,
       UserService,
-      AuthService
+      AuthService,
+      AppReadyEvent,
+      SpaceService
   ]
 })
 export class AppModule { }

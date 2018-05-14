@@ -1,7 +1,35 @@
-.gw-container{
-	height: 100%;
+// @import './styles/variables';
+// @import './styles/mixin';
+// @import './styles/animation';
+// @import './styles/font';
+// @import './styles/button';
+// @import './styles/datepicker';
+// @import './styles/flags';
+// @import './styles/switch';
+// @import './styles/modal';
+// @import './styles/form';
+// @import './styles/tabs';
+// @import './styles/toaster';
+// @import './styles/sortable';
+// @import './styles/popover';
+// @import './styles/label';
+// @import './styles/coming-soon';
+// @import './styles/sticky';
+// @import './styles/icons';
+// @import './styles/typo';
+// @import './styles/customdatatable';
+// @import './styles/input';
+// @import './styles/background';
+
+html {
+  height: 100%;
 }
 
-.pkm-modal > .modal-header, .pkm-modal .modal-header{
-	border-bottom: 0 !important;
+body {
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  font-family: "avenir-regular", Arial, Helvetica, sans-serif;
 }

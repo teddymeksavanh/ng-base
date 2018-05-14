@@ -1,2 +1,10 @@
-// import { Pokemon } from './pokemon';
+import { Core } from './core';
 import { User } from './user';
+import { FirstStage } from './firststage';
+import { LaunchSite } from './launchsite';
+import { Links } from './links';
+import { Payload } from './payload';
+import { Reuse } from './reuse';
+import { Rocket } from './rocket';
+import { RootObject } from './rootobject';
+import { SecondStage } from './secondstage';
